@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Students Club</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>🎓 Students Club</h1>
+
+    <!-- Register -->
+    <div class="card" id="register-section">
+      <h2>Register</h2>
+      <input id="reg-username" placeholder="Username">
+      <input id="reg-email" type="email" placeholder="Email">
+      <input id="reg-password" type="password" placeholder="Password">
+      <button onclick="register()">Register</button>
+    </div>
+
+    <!-- Login -->
+    <div class="card" id="login-section" style="display:none;">
+      <h2>Login</h2>
+      <input id="login-email" type="email" placeholder="Email">
+      <input id="login-password" type="password" placeholder="Password">
+      <button onclick="login()">Login</button>
+    </div>
+
+    <!-- After Login -->
+    <div id="app-section" style="display:none;">
+      <div class="card">
+        <h2>Create Post</h2>
+        <input id="post-title" placeholder="Title">
+        <textarea id="post-content" placeholder="Content"></textarea>
+        <button onclick="createPost()">Create Post</button>
+      </div>
+
+      <div class="card">
+        <h2>Posts</h2>
+        <div id="posts"></div>
+        <button onclick="loadPosts()">Load Posts</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
